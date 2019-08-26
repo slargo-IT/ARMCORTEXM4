@@ -6,6 +6,11 @@
 #define NONE 0x00U
 
 unsigned int delay(unsigned int);
+unsigned int delay(unsigned int n){
+      while(n < 1000000){
+        ++n;
+       }
+       return 0;}
 
 int main(){
   
@@ -46,8 +51,4 @@ int main(){
   return 0;
 }
 
-unsigned int delay(unsigned int n){
-      while(n < 1000000){
-        ++n;
-       }
-       return 0;}
+
